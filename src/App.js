@@ -1,4 +1,4 @@
-import { Box, Typography } from "@material-ui/core";
+import { Box, MuiThemeProvider, Typography } from "@material-ui/core";
 import React from "react";
 
 const App = () => {
@@ -8,5 +8,9 @@ const App = () => {
     </Box>
   );
 };
+
+<MuiThemeProvider>
+  <Routes />
+</MuiThemeProvider>
 
 export default App;

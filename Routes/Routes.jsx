@@ -1,5 +1,5 @@
-import React from 'react'
 import { Route, Switch } from 'react-router';
+import React from 'react'
 
 const Routes = () => {
     return (
@@ -8,5 +8,11 @@ const Routes = () => {
         </div>
     )
 }
+
+<Switch>
+    <Route>
+        
+    </Route>
+</Switch>
 
 export default Routes
