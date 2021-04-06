@@ -1,18 +1,16 @@
 import { Route, Switch } from 'react-router';
-import React from 'react'
+import Home from '../Pages/Home/Home';
+import Planos from '../Pages/Planos/Planos';
+import React from 'react';
 
 const Routes = () => {
     return (
-        <div>
-        
-        </div>
+    <Switch>
+        <Route path="/" exact component={Home} />
+        <Route path="/" exact component={Planos} />
+    </Switch>
     )
 }
 
-<Switch>
-    <Route>
-        
-    </Route>
-</Switch>
 
 export default Routes
