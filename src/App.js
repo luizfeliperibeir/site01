@@ -1,16 +1,15 @@
-import { Box, MuiThemeProvider, Typography } from "@material-ui/core";
-import React from "react";
+import './App.css';
+
+import { MuiThemeProvider } from '@material-ui/core';
+import React from 'react';
+import Routes from './Routes/Routes';
 
 const App = () => {
-  return (
-    <MuiThemeProvider>
-      <Routes />
-    </MuiThemeProvider>
-  );
+	return (
+		<MuiThemeProvider>
+			<Routes />
+		</MuiThemeProvider>
+	);
 };
-
-<MuiThemeProvider>
-  <Routes />
-</MuiThemeProvider>
 
 export default App;
