@@ -1,2 +1,9 @@
-*{padding: 0;
-margin: 0;}
+* {
+	padding: 0;
+	margin: 0;
+}
+
+a,
+u {
+	text-decoration: none !important;
+}
