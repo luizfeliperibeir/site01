@@ -1,7 +1,9 @@
 import { Box, Typography, makeStyles } from '@material-ui/core';
 
+import { Alarm } from '@material-ui/icons';
 import CustomHeader from '../../Components/CustomHeader/CustomHeader';
 import React from 'react';
+import lzrLogo from '../../assets/logo.png';
 
 const useStyles = makeStyles((theme) => ({
 	root: {
@@ -16,8 +18,12 @@ const useStyles = makeStyles((theme) => ({
 		height: '900px',
 		justifyContent: 'center',
 		alignItems: 'center',
-		backgroundColor: 'lightblue',
 		width: '100%',
+		backgroundImage: `url(${'https://i1.wp.com/www.csscodelab.com/wp-content/uploads/2019/11/animated-html-css-ripples-background-example.png?fit=966%2C634&ssl=1'})`,
+		backgroundPosition: 'center',
+		backgroundAttachment: 'fixed',
+		backgroundRepeat: 'no-repeat',
+		backgroundSize: 'cover',
 	},
 	section2Container: {
 		display: 'flex',
@@ -25,7 +31,7 @@ const useStyles = makeStyles((theme) => ({
 		height: '900px',
 		justifyContent: 'center',
 		alignItems: 'center',
-		backgroundColor: 'lightgreen',
+		backgroundColor: '#f0f0f0',
 		width: '100%',
 	},
 	tituloStyle: {
@@ -40,13 +46,25 @@ const Home = () => {
 		<Box className={classes.root}>
 			<CustomHeader />
 			<Box className={classes.section1Container}>
-				<Box className={classes.logoContainer}>logo</Box>
+				<Box className={classes.logoContainer}>
+					<img alt="LZR Logo" src={lzrLogo} style={{ height: '100px' }} />
+				</Box>
 				<Typography variant="h3" className={classes.tituloStyle}>
 					A SUA HISTÓRIA COMEÇA AQUI
 				</Typography>
 			</Box>
 			<Box className={classes.section2Container}>
-				<Box className={classes.logoContainer}>logo</Box>
+				<Box className={classes.logoContainer}>
+					logo <Alarm style={{ fontSize: '100px' }} color="primary" />
+				</Box>
+				<Typography variant="h3" className={classes.tituloStyle}>
+					A SUA HISTÓRIA COMEÇA AQUI
+				</Typography>
+			</Box>
+			<Box className={classes.section1Container}>
+				<Box className={classes.logoContainer}>
+					<img alt="LZR Logo" src={lzrLogo} style={{ height: '100px' }} />
+				</Box>
 				<Typography variant="h3" className={classes.tituloStyle}>
 					A SUA HISTÓRIA COMEÇA AQUI
 				</Typography>
