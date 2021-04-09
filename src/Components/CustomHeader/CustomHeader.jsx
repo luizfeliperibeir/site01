@@ -36,7 +36,7 @@ const CustomHeader = () => {
 	const classes = useStyles();
 	return (
 		<Box className={classes.root}>
-			<Box className={classes.iconContainer}>Icone</Box>
+			<Box className={classes.iconContainer}>icone</Box>
 			<Box className={classes.menuContainer}>
 				<Typography className={classes.menuItem} component={Link} to="/">
 					HOME

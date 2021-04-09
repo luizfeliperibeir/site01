@@ -1,6 +1,6 @@
 import { Box, Typography, makeStyles } from '@material-ui/core';
 
-import CustomHeader from '../../Components/CustomHeader/CustomHeader'
+import CustomHeader from '../../Components/CustomHeader/CustomHeader';
 import React from 'react';
 
 const useStyles = makeStyles((theme) => ({
