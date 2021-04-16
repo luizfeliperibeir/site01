@@ -5,7 +5,7 @@ import CustomCard from '../../Components/CustomCard/CustomCard';
 import CustomHeader from '../../Components/CustomHeader/CustomHeader';
 import React from 'react';
 import lzrLogo from '../../assets/logo.png';
-import {  } from "../../assets/lzrbackgroun";
+import lzrbackgroun from "../../assets/lzrbackgroun";
 
 const useStyles = makeStyles((theme) => ({
 	root: {
