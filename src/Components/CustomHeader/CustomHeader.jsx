@@ -2,7 +2,7 @@ import { Box, Typography, makeStyles } from '@material-ui/core';
 
 import { Link } from 'react-router-dom';
 import React from 'react';
-import lzrLogo from '../../assets/logo.png';
+import lzrLogo from '../../assets/logo.svg';
 
 const useStyles = makeStyles((theme) => ({
 	root: {
@@ -38,7 +38,7 @@ const CustomHeader = () => {
 	return (
 		<Box className={classes.root}>
 			<Box className={classes.iconContainer}>
-				<img alt="LZR Logo" src={lzrLogo} style={{ height: '100px' }} />
+				<img alt="LZR Logo" src={lzrLogo} style={{ height: '150px' }} />
 			</Box>
 			<Box className={classes.menuContainer}>
 				<Typography className={classes.menuItem} component={Link} to="/">

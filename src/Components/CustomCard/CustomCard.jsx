@@ -10,7 +10,7 @@ const CustomCard = ({ icone, imagem, titulo, descricao }) => {
 				<Box></Box>
 			</CardHeader>
 			<CardContent>
-				<span class="material-icons">{icone}</span>
+				<span class="material-icons" >{icone}</span>
 				<Typography variant="h4">{titulo}</Typography>
 				<Typography variant="h5">{descricao}</Typography>
 			</CardContent>

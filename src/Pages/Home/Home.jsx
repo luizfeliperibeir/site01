@@ -4,8 +4,9 @@ import AcUnitIcon from '@material-ui/icons/AcUnit';
 import CustomCard from '../../Components/CustomCard/CustomCard';
 import CustomHeader from '../../Components/CustomHeader/CustomHeader';
 import React from 'react';
-import lzrLogo from '../../assets/logo.png';
-import lzrbackgroun from "../../assets/lzrbackgroun";
+import lzrLogo from '../../assets/logo.svg';
+import lzrbackground from '../../assets/lzrbackgroun.png'
+
 
 const useStyles = makeStyles((theme) => ({
 	root: {
@@ -68,7 +69,7 @@ const Home = () => {
 				}}
 			>
 				<Box className={classes.logoContainer}>
-					<img alt="LZR Logo" src={lzrLogo} style={{ height: '100px' }} />
+					<img alt="LZR Logo" src={lzrLogo} style={{ height: '150px' }} />
 				</Box>
 				<Typography variant="h3" className={classes.tituloStyle}>
 					A SUA HISTÓRIA COMEÇA AQUI
@@ -84,6 +85,9 @@ const Home = () => {
 					flexDirection: 'column',
 				}}
 			>
+				<Box className={classes.logoContainer}>
+					<img alt="LZR Logo" src={lzrLogo} style={{ height: '150px' }} />
+				</Box>
 				<Typography variant="h3" className={classes.tituloStyle03}>
 					LZR FITNESS
 				</Typography>
@@ -104,24 +108,24 @@ const Home = () => {
 				style={{
 					alignItems: 'center',
 					justifyContent: 'center',
-					backgroundImage: <img src={lzrbackgroun}/>,
+					backgroundColor: '#86000a'
 				}}
 			>
 				{/* 	<Box className={classes.logoContainer}>
 					<img alt="LZR Logo" src={lzrLogo} style={{ height: '100px' }} />
 				</Box> */}
 				<Box>
-					<CustomCard titulo="FOCO" icone={'face'} descricao="A Lzr é uma empresa que trabalha com 
+					<CustomCard titulo="FOCO" icone={'save'} descricao="A Lzr é uma empresa que trabalha com 
 					foco. Ou seja, estamos dispostos a trabalhar com qualquer pessoa que tenha foco em sua caminhada, 
 					nos trilhos de alcançar aquilo que se propôs" />
 				</Box>
 				<Box>
-					<CustomCard titulo="METAS" icone={'face'} descricao="Ter metas é um passo imprescindível para alcançar o 
+					<CustomCard titulo="METAS" icone={'done all'} descricao="Ter metas é um passo imprescindível para alcançar o 
 					seus obejetivos, tendo em mente que todo processo é gradativo e perene, o Foco aliado as suas próprias metas 
 					viram a chave para chegar no seu objetivo. "/>
 				</Box>
 				<Box>
-					<CustomCard titulo="OBJETIVOS" icone={'face'} descricao="Tenha em mente desde sempre seus objetivos, e não importa quais sejão.
+					<CustomCard titulo="OBJETIVOS" icone={'travel explore'} descricao="Tenha em mente desde sempre seus objetivos, e não importa quais sejão.
 					Ter um corpo melhor, se preparar para competições ou testes, ser mais saudável, se socializar. Quando fica claro seu objetivo, o foco 
 					e as metas ficam palpáveis, facilitando ainda mais o processo de chegada no seu objetivo. "/>
 				</Box>
@@ -136,7 +140,7 @@ const Home = () => {
 			style={{
 				alignItems: 'center',
 				justifyContent: 'center',
-				backgroundImage: `url(${url1})`,
+				backgroundImage: `url(${lzrbackground})` ,
 			}}>
 				<Typography variant="h3" className={classes.tituloStyle03}>
 					Blog
