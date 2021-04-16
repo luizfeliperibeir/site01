@@ -5,6 +5,7 @@ import CustomCard from '../../Components/CustomCard/CustomCard';
 import CustomHeader from '../../Components/CustomHeader/CustomHeader';
 import React from 'react';
 import lzrLogo from '../../assets/logo.png';
+import {  } from "../../assets/lzrbackgroun";
 
 const useStyles = makeStyles((theme) => ({
 	root: {
@@ -26,7 +27,7 @@ const useStyles = makeStyles((theme) => ({
 		fontWeight: 'bold',
 	},
 	tituloStyle02: {
-		color: 'black',
+		color: 'white',
 		fontFamily: 'Arial',
 		fontSize: '30px',
 		textAlign: 'center',
@@ -34,7 +35,7 @@ const useStyles = makeStyles((theme) => ({
 		margin: '20px 0',
 	},
 	tituloStyle03: {
-		color: 'blue',
+		color: '#bd222e',
 		fontWeight: 'bold',
 		borderBottom: '2px solid silver',
 	},
@@ -76,7 +77,7 @@ const Home = () => {
 			<Box
 				className={classes.sectionContainer}
 				style={{
-					backgroundColor: '#f0f0f0',
+					backgroundColor: '#002c54',
 					alignItems: 'center',
 					justifyContent: 'center',
 					display: 'flex',
@@ -103,20 +104,26 @@ const Home = () => {
 				style={{
 					alignItems: 'center',
 					justifyContent: 'center',
-					backgroundImage: `url(${'https://i1.wp.com/www.csscodelab.com/wp-content/uploads/2019/11/animated-html-css-ripples-background-example.png?fit=966%2C634&ssl=1'})`,
+					backgroundImage: <img src={lzrbackgroun}/>,
 				}}
 			>
 				{/* 	<Box className={classes.logoContainer}>
 					<img alt="LZR Logo" src={lzrLogo} style={{ height: '100px' }} />
 				</Box> */}
 				<Box>
-					<CustomCard titulo="FOCO" icone={'face'} descricao="nos sos masasdhujahd asdj" />
+					<CustomCard titulo="FOCO" icone={'face'} descricao="A Lzr é uma empresa que trabalha com 
+					foco. Ou seja, estamos dispostos a trabalhar com qualquer pessoa que tenha foco em sua caminhada, 
+					nos trilhos de alcançar aquilo que se propôs" />
 				</Box>
 				<Box>
-					<CustomCard titulo="METAS" icone={'face'} />
+					<CustomCard titulo="METAS" icone={'face'} descricao="Ter metas é um passo imprescindível para alcançar o 
+					seus obejetivos, tendo em mente que todo processo é gradativo e perene, o Foco aliado as suas próprias metas 
+					viram a chave para chegar no seu objetivo. "/>
 				</Box>
 				<Box>
-					<CustomCard titulo="OBJETIVOS" icone={'face'} />
+					<CustomCard titulo="OBJETIVOS" icone={'face'} descricao="Tenha em mente desde sempre seus objetivos, e não importa quais sejão.
+					Ter um corpo melhor, se preparar para competições ou testes, ser mais saudável, se socializar. Quando fica claro seu objetivo, o foco 
+					e as metas ficam palpáveis, facilitando ainda mais o processo de chegada no seu objetivo. "/>
 				</Box>
 
 				{/* <Typography className={classes.menuItem}></Typography>
@@ -125,7 +132,12 @@ const Home = () => {
 				<Typography className={classes.menuItem}>OBJETIVOS</Typography>
 				<Typography className={classes.menuItem}>VALORES</Typography> */}
 			</Box>
-			<Box className={classes.section4Container}>
+			<Box className={classes.sectionContainer}
+			style={{
+				alignItems: 'center',
+				justifyContent: 'center',
+				backgroundImage: `url(${url1})`,
+			}}>
 				<Typography variant="h3" className={classes.tituloStyle03}>
 					Blog
 				</Typography>
